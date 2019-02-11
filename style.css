@@ -1,0 +1,93 @@
+
+/*blue of logo 41ABC6*/
+
+body{
+  background: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  /*text-align: center;*/
+  /*text-align: center;*/
+}
+.row{
+  display: flex;
+  /*align-items: center;*/
+}
+.top-row{
+  align-items: center
+}
+.burkson-logo{
+  width: 85px;
+}
+.container{
+  margin: auto;
+  width: 700px;
+  /*height: 500px;*/
+  /*background: #234dd3;*/
+  padding: 30px;
+  /*border: 1px solid black;*/
+}
+
+.logo-container{
+  text-align: center;
+  border-right: 1px solid black;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.input-container{
+  flex-basis: 300px;
+  /*padding: 0px 78px;*/
+  padding-left: 40px;
+  padding-right: 100px;
+}
+input{
+  height: 30px;
+  width: 160px;
+}
+#pin-pad{
+  /*flex: 1;*/  order:1;
+
+}
+
+
+
+#pin-pad div{
+  display: flex;
+  align-content: space-around;
+}
+#pin-pad div button{
+  /*margin: auto;*/
+}
+.key{
+  /*background: #41ABC6;*/
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1em;
+  background: #F4F4F4;
+  color: #020202;
+  border-radius: 100%;
+  border: none;
+  /*margin: 3px;*/
+}
+.key-with-text{
+  font-size: .8em;
+}
+.key:hover{
+  background: #0000001c;
+  box-shadow: 0px 0px 2px inset #F4F4F4;
+}
+
+.top-row div{
+  padding: 40px;
+}
+.burkson-container{
+  padding-right: 0px!important;
+}
+.burkson-container h1{
+  margin-bottom: 0;
+}
+.burkson-container p{
+  margin-top: 0px;
+}
