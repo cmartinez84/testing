@@ -11,7 +11,7 @@ body{
   margin: auto;
   height:  768px;
   width: 1024px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 .row{
   display: flex;
@@ -94,4 +94,60 @@ input{
 .key:hover{
   background: #0000001c;
   box-shadow: 0px 0px 2px inset #F4F4F4;
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .top-row{
+      height: 375px;
+    }
+    .bottom-row{
+      flex-direction: column;
+  }
+  .input-container{
+    padding: 0px 180px
+  }
+  input{
+    height: 70px;
+    width: 638px;
+  }
+    .logo-container{
+      padding-right: 25px;
+    }
+
+    .burkson-container h1{
+      font-size: 3em;
+      margin-top: 0;
+    }
+    .burkson-container h2{
+      font-weight: 100;
+      margin-top: 5px;
+      font-size: 2.2em;
+    }
+    .burkson-container{
+      padding-left: 25px;
+    }
+    #pin-pad{
+      align-self: center;
+    }
+    #pin-pad div{
+      display: block;
+    }
+    .key{
+      font-size: 2.2em;
+      margin: 15px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .input-container{
+      font-size: 2em
+    }
+
 }
