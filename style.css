@@ -160,6 +160,7 @@ input{
    .container{
      display: flex;
      flex-direction: row;
+     background: blue;
    }
    .row{
      flex-direction: column;
