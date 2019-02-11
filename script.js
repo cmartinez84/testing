@@ -30,12 +30,12 @@ function clear(){
 function submit(){
   let text;
   if(pin.join("") === "1234"){
-    text = "PIN accpeted. You will be logged in shortly."
+    text = "PIN accpeted. You will be logged in shortly.";
   }
   else{
     pin = [];
     input.value = pin.join("");
-    text = "Incorrect PIN"
+    text = "Incorrect PIN";
   }
   message.innerHTML = text;
 }
