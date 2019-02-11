@@ -60,6 +60,11 @@ input{
 .create-pin{
   margin-bottom: 7px;
 }
+#message{
+  white-space: pre;
+}
+
+
 
 /*lower right*/
 
@@ -98,12 +103,14 @@ input{
 
 
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 Potrait ----------- */
 
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation : portrait)
+ {
     .top-row{
       height: 375px;
     }
@@ -119,6 +126,10 @@ input{
   }
     .logo-container{
       padding-right: 25px;
+    }
+    .burkson-logo{
+      width: 160px;
+      padding-top: 56px;
     }
 
     .burkson-container h1{
@@ -149,5 +160,55 @@ input{
     .input-container{
       font-size: 2em
     }
-
 }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 Landscape ----------- */
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation : landscape)
+ {
+   .container{
+     display: flex;
+     flex-direction: row;
+   }
+   .row{
+     flex-direction: column;
+     align-items: center;
+   }
+   .top-row{
+     flex: 1;
+     height: 375px;
+     align-items: center;
+   }
+   .bottom-row{
+     flex: 5;
+     flex-direction: row;
+     align-items: flex-start;
+   }
+   .burkson-logo{
+     padding: 0;
+   }
+   .logo-container{
+     padding: 0;
+     padding-top: 50px;
+     padding-left: 54px;
+   }
+   .burkson-container{
+     border: 0;
+   }
+   .input-container{
+     padding: 0;
+     flex-basis: auto;
+     flex: 1;
+     padding: 70px;
+     padding-left: 90px;
+   }
+   #pin-pad{
+     flex: 1;
+     padding-top: 60px;
+   }
+ }
