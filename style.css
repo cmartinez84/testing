@@ -99,6 +99,7 @@ input{
  {
   .top-row{
     height: 375px;
+    background: lightblue;
   }
   .bottom-row{
     flex-direction: column;
