@@ -93,8 +93,8 @@ input{
 /* ----------- iPhone 6, 6S, 7 and 8 Potrait ----------- */
 
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
+  and (min-width: 375px)
+  and (max-width: 667px)
   and (orientation : portrait)
  {
   .top-row{
@@ -151,8 +151,8 @@ input{
 /* ----------- iPhone 6, 6S, 7 and 8 Landscape ----------- */
 
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
+  and (min-width: 375px)
+  and (max-width: 667px)
   and (orientation : landscape)
  {
    .container{
@@ -200,8 +200,8 @@ input{
 
 /*Ipad Portrait*/
  @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
+  and (min-width : 768px)
+  and (max-width : 1024px)
   and (orientation : portrait) {
     .container{
       display: flex;
