@@ -1,10 +1,17 @@
 
 /*blue of logo 41ABC6*/
+/*background: #234dd3;*/
 
 body{
   background: #FFFFFF;
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
+}
+.container{
+  margin: auto;
+  height:  768px;
+  width: 1024px;
+  border: 1px solid black;
 }
 .row{
   display: flex;
@@ -13,24 +20,32 @@ body{
   align-items: center;
   height: 300px;
 }
+
+/*upper left*/
 .burkson-logo{
   width: 130px;
 }
-.container{
-  margin: auto;
-  height:  768px;
-  width: 1024px;
-  /*background: #234dd3;*/
-  border: 1px solid black;
-}
-
 .logo-container{
   text-align: center;
   padding-left: 165px;
   padding-right: 60px;
+}
+.burkson-container{
+  padding-left: 65px;
+  border-left: 1px solid lightgrey;
+  height: 120px;
 
 }
+/*upper right*/
+.burkson-container h1{
+  margin-bottom: 0;
+}
+.burkson-container h2{
+  font-weight: 100;
+  margin-top: 5px;
+}
 
+/*lower left*/
 .input-container{
   flex-basis: 350px;
   font-size: 1.2em;
@@ -46,7 +61,7 @@ input{
   margin-bottom: 7px;
 }
 
-
+/*lower right*/
 
 #pin-pad div{
   /*background:  yellow;*/
@@ -79,18 +94,4 @@ input{
 .key:hover{
   background: #0000001c;
   box-shadow: 0px 0px 2px inset #F4F4F4;
-}
-
-.burkson-container{
-  padding-left: 65px;
-  border-left: 1px solid lightgrey;
-  height: 120px;
-
-}
-.burkson-container h1{
-  margin-bottom: 0;
-}
-.burkson-container h2{
-  font-weight: 100;
-  margin-top: 5px;
 }
